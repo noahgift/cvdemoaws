@@ -5,4 +5,7 @@ install:
 lint:
 	pylint --disable=R,C,E1120 hellobj.py
 
+format:
+	black *.py
+
 all: install lint 
